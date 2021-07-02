@@ -1,5 +1,5 @@
 # Usage
-`node get.js -o "Item Name"
+`node get.js -o "Item Name"`
 
 --
 
