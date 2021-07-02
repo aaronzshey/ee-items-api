@@ -1,0 +1,27 @@
+{
+  "name": "eedatamine",
+  "version": "0.1.0",
+  "description": "Hopefully self maintaining build process and API for Eve Echoes.",
+  "main": "index.js",
+  "dependencies": {
+    "sequelize": "^6.6.4",
+    "sqlite3": "^5.0.2",
+    "yargs": "^17.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "android",
+    "eve",
+    "datamine",
+    "sql"
+  ],
+  "author": "cog",
+  "license": "MIT"
+}

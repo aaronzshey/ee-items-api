@@ -1,0 +1,49 @@
+For attributes.db, the schema is as follows:
+
+```sql
+CREATE TABLE IF NOT EXISTS Attributes
+(
+  [Name] VARCHAR(4000)  NOT NULL,
+  [ID] INTEGER  NOT NULL
+
+);
+```
+varchar can store unicode (like chinese characters), but uses more space.
+
+
+For en_ and zh_descriptions.db, it's similar:
+
+```sql
+CREATE TABLE IF NOT EXISTS Descriptions
+(
+  [Content] VARCHAR(4000)  NOT NULL,
+  [ID] INTEGER  NOT NULL
+
+);
+```
+
+For items.db (with Chinese names and desc):
+
+```sql
+CREATE TABLE IF NOT EXISTS Items
+(
+  [Name] VARCHAR(4000)  NOT NULL,
+  [Description] VARCHAR(4000)  NOT NULL,
+  [ID] INTEGER  NOT NULL
+);
+```
+
+Useful data (attributes stats etc) is generated on demand.  Item IDs common between
+items/##.json and dogma/type_attributes_##.json are stored in loc.db with a reference
+to their location (10100000101 is in [snip]/dogma/type_attributes_0.json, for example),
+and when a request is made, the scripts will search for the file and read the object out of the file.
+
+This is the schema for loc.db:
+
+```sql
+CREATE TABLE IF NOT EXISTS Locations
+(
+  [ID] INTEGER  NOT NULL,
+  [Path] VARCHAR(4000)  NOT NULL
+);
+```
