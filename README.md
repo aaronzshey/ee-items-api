@@ -1,6 +1,7 @@
 # Usage
 `node get.js -o "Item Name"`
 
---
 
-RESTful API, automated build process and better formatting coming soon! 
+# To Do:
+
+RESTful API, cleaner data ouput, autobuild/update from APK/AAB, and more coming soon! 
