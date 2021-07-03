@@ -1,0 +1,85 @@
+{
+  "buildIndex": true,
+  "keyFooter": {
+    "fixedItemSize": 16,
+    "itemTypes": {
+      "attributes": {
+        "key": {
+          "size": 8,
+          "type": "long"
+        },
+        "offset": {
+          "min": 0,
+          "size": 4,
+          "type": "int"
+        },
+        "size": {
+          "min": 0,
+          "size": 4,
+          "type": "int"
+        }
+      },
+      "attributesWithVariableOffsets": [],
+      "constantAttributeOffsets": {
+        "key": 0,
+        "offset": 8,
+        "size": 12
+      },
+      "endOfFixedSizeData": 16,
+      "optionalValueLookups": {},
+      "size": 16,
+      "type": "object"
+    },
+    "type": "list"
+  },
+  "keyTypes": {
+    "size": 8,
+    "type": "long"
+  },
+  "type": "dict",
+  "valueTypes": {
+    "buildIndex": true,
+    "keyFooter": {
+      "fixedItemSize": 12,
+      "itemTypes": {
+        "attributes": {
+          "key": {
+            "size": 4,
+            "type": "int"
+          },
+          "offset": {
+            "min": 0,
+            "size": 4,
+            "type": "int"
+          },
+          "size": {
+            "min": 0,
+            "size": 4,
+            "type": "int"
+          }
+        },
+        "attributesWithVariableOffsets": [],
+        "constantAttributeOffsets": {
+          "key": 0,
+          "offset": 4,
+          "size": 8
+        },
+        "endOfFixedSizeData": 12,
+        "optionalValueLookups": {},
+        "size": 12,
+        "type": "object"
+      },
+      "type": "list"
+    },
+    "keyTypes": {
+      "size": 4,
+      "type": "int"
+    },
+    "type": "dict",
+    "valueTypes": {
+      "precision": "double",
+      "size": 8,
+      "type": "float"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "buildIndex": true,
+  "keyFooter": {
+    "fixedItemSize": 12,
+    "itemTypes": {
+      "attributes": {
+        "key": {
+          "size": 4,
+          "type": "int"
+        },
+        "offset": {
+          "min": 0,
+          "size": 4,
+          "type": "int"
+        },
+        "size": {
+          "min": 0,
+          "size": 4,
+          "type": "int"
+        }
+      },
+      "attributesWithVariableOffsets": [],
+      "constantAttributeOffsets": {
+        "key": 0,
+        "offset": 4,
+        "size": 8
+      },
+      "endOfFixedSizeData": 12,
+      "optionalValueLookups": {},
+      "size": 12,
+      "type": "object"
+    },
+    "type": "list"
+  },
+  "keyTypes": {
+    "size": 4,
+    "type": "int"
+  },
+  "type": "dict",
+  "valueTypes": {
+    "attributes": {
+      "description": {
+        "isOptional": true,
+        "type": "string"
+      },
+      "display_name": {
+        "isOptional": true,
+        "type": "string"
+      },
+      "unit_name": {
+        "type": "string"
+      }
+    },
+    "attributesWithVariableOffsets": [
+      "unit_name",
+      "display_name",
+      "description"
+    ],
+    "constantAttributeOffsets": {},
+    "endOfFixedSizeData": 0,
+    "maxBitFieldValue": 2,
+    "optionalValueLookups": {
+      "description": 2,
+      "display_name": 1
+    },
+    "type": "object"
+  }
+}

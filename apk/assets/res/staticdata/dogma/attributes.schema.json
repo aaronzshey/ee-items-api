@@ -1,0 +1,156 @@
+{
+  "buildIndex": true,
+  "keyFooter": {
+    "fixedItemSize": 12,
+    "itemTypes": {
+      "attributes": {
+        "key": {
+          "size": 4,
+          "type": "int"
+        },
+        "offset": {
+          "min": 0,
+          "size": 4,
+          "type": "int"
+        },
+        "size": {
+          "min": 0,
+          "size": 4,
+          "type": "int"
+        }
+      },
+      "attributesWithVariableOffsets": [],
+      "constantAttributeOffsets": {
+        "key": 0,
+        "offset": 4,
+        "size": 8
+      },
+      "endOfFixedSizeData": 12,
+      "optionalValueLookups": {},
+      "size": 12,
+      "type": "object"
+    },
+    "type": "list"
+  },
+  "keyTypes": {
+    "size": 4,
+    "type": "int"
+  },
+  "type": "dict",
+  "valueTypes": {
+    "attributes": {
+      "attribute_category": {
+        "size": 4,
+        "type": "int"
+      },
+      "attribute_id": {
+        "size": 4,
+        "type": "int"
+      },
+      "attribute_name": {
+        "type": "string"
+      },
+      "available": {
+        "size": 1,
+        "type": "bool"
+      },
+      "charge_recharge_time_id": {
+        "size": 4,
+        "type": "int"
+      },
+      "de_name": {
+        "isOptional": true,
+        "type": "string"
+      },
+      "default_value": {
+        "size": 4,
+        "type": "float"
+      },
+      "en_name": {
+        "isOptional": true,
+        "type": "string"
+      },
+      "fr_name": {
+        "isOptional": true,
+        "type": "string"
+      },
+      "high_is_good": {
+        "size": 1,
+        "type": "bool"
+      },
+      "ja_name": {
+        "isOptional": true,
+        "type": "string"
+      },
+      "max_attribute_id": {
+        "size": 4,
+        "type": "int"
+      },
+      "operator": {
+        "fixedItemSize": 4,
+        "itemTypes": {
+          "size": 4,
+          "type": "int"
+        },
+        "type": "list"
+      },
+      "ru_name": {
+        "isOptional": true,
+        "type": "string"
+      },
+      "stackable": {
+        "size": 1,
+        "type": "bool"
+      },
+      "to_attr_id": {
+        "fixedItemSize": 4,
+        "itemTypes": {
+          "size": 4,
+          "type": "int"
+        },
+        "type": "list"
+      },
+      "unit_id": {
+        "size": 4,
+        "type": "int"
+      },
+      "zh_name": {
+        "isOptional": true,
+        "type": "string"
+      }
+    },
+    "attributesWithVariableOffsets": [
+      "ru_name",
+      "de_name",
+      "fr_name",
+      "ja_name",
+      "operator",
+      "en_name",
+      "attribute_name",
+      "zh_name",
+      "to_attr_id"
+    ],
+    "constantAttributeOffsets": {
+      "attribute_category": 5,
+      "attribute_id": 23,
+      "available": 0,
+      "charge_recharge_time_id": 11,
+      "default_value": 15,
+      "high_is_good": 9,
+      "max_attribute_id": 1,
+      "stackable": 10,
+      "unit_id": 19
+    },
+    "endOfFixedSizeData": 27,
+    "maxBitFieldValue": 32,
+    "optionalValueLookups": {
+      "de_name": 2,
+      "en_name": 16,
+      "fr_name": 4,
+      "ja_name": 8,
+      "ru_name": 1,
+      "zh_name": 32
+    },
+    "type": "object"
+  }
+}

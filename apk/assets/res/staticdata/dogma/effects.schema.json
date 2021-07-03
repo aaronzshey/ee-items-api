@@ -1,0 +1,129 @@
+{
+  "buildIndex": true,
+  "keyFooter": {
+    "fixedItemSize": 12,
+    "itemTypes": {
+      "attributes": {
+        "key": {
+          "size": 4,
+          "type": "int"
+        },
+        "offset": {
+          "min": 0,
+          "size": 4,
+          "type": "int"
+        },
+        "size": {
+          "min": 0,
+          "size": 4,
+          "type": "int"
+        }
+      },
+      "attributesWithVariableOffsets": [],
+      "constantAttributeOffsets": {
+        "key": 0,
+        "offset": 4,
+        "size": 8
+      },
+      "endOfFixedSizeData": 12,
+      "optionalValueLookups": {},
+      "size": 12,
+      "type": "object"
+    },
+    "type": "list"
+  },
+  "keyTypes": {
+    "size": 4,
+    "type": "int"
+  },
+  "type": "dict",
+  "valueTypes": {
+    "attributes": {
+      "disallow_auto_repeat": {
+        "size": 1,
+        "type": "bool"
+      },
+      "discharge_attribute_id": {
+        "size": 4,
+        "type": "int"
+      },
+      "duration_attribute_id": {
+        "size": 4,
+        "type": "int"
+      },
+      "effect_category": {
+        "size": 4,
+        "type": "int"
+      },
+      "effect_id": {
+        "size": 4,
+        "type": "int"
+      },
+      "effect_name": {
+        "type": "string"
+      },
+      "electronic_chance": {
+        "size": 1,
+        "type": "bool"
+      },
+      "falloff_attribute_id": {
+        "size": 4,
+        "type": "int"
+      },
+      "fitting_usage_chance_attribute_id": {
+        "size": 4,
+        "type": "int"
+      },
+      "guid": {
+        "type": "string"
+      },
+      "is_assistance": {
+        "size": 1,
+        "type": "bool"
+      },
+      "is_offensive": {
+        "size": 1,
+        "type": "bool"
+      },
+      "is_warp_safe": {
+        "size": 1,
+        "type": "bool"
+      },
+      "range_attribute_id": {
+        "size": 4,
+        "type": "int"
+      },
+      "range_chance": {
+        "size": 1,
+        "type": "bool"
+      },
+      "tracking_speed_attribute_id": {
+        "size": 4,
+        "type": "int"
+      }
+    },
+    "attributesWithVariableOffsets": [
+      "effect_name",
+      "guid"
+    ],
+    "constantAttributeOffsets": {
+      "disallow_auto_repeat": 6,
+      "discharge_attribute_id": 29,
+      "duration_attribute_id": 33,
+      "effect_category": 24,
+      "effect_id": 7,
+      "electronic_chance": 5,
+      "falloff_attribute_id": 0,
+      "fitting_usage_chance_attribute_id": 15,
+      "is_assistance": 4,
+      "is_offensive": 28,
+      "is_warp_safe": 37,
+      "range_attribute_id": 20,
+      "range_chance": 19,
+      "tracking_speed_attribute_id": 11
+    },
+    "endOfFixedSizeData": 38,
+    "optionalValueLookups": {},
+    "type": "object"
+  }
+}

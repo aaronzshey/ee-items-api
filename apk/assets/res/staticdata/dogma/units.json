@@ -1,0 +1,270 @@
+{
+  "1": {
+    "description": "Meter",
+    "display_name": "m",
+    "unit_name": "Length"
+  },
+  "10": {
+    "description": "Meter per second",
+    "display_name": "m/sec",
+    "unit_name": "Speed"
+  },
+  "101": {
+    "display_name": "s",
+    "unit_name": "Milliseconds"
+  },
+  "102": {
+    "display_name": "mm",
+    "unit_name": "Millimeters"
+  },
+  "103": {
+    "unit_name": "MegaPascals"
+  },
+  "104": {
+    "description": "Indicates that the unit is a multiplier.",
+    "display_name": "x",
+    "unit_name": "Multiplier"
+  },
+  "105": {
+    "display_name": "%",
+    "unit_name": "Percentage"
+  },
+  "106": {
+    "display_name": "tf",
+    "unit_name": "Teraflops"
+  },
+  "107": {
+    "display_name": "MW",
+    "unit_name": "MegaWatts"
+  },
+  "108": {
+    "description": "Used for resistance.\n0.0 = 100% 1.0 = 0%",
+    "display_name": "%",
+    "unit_name": "Inverse Absolute Percent"
+  },
+  "109": {
+    "description": "Used for multipliers displayed as %\n1.1 = +10%\n0.9 = -10%",
+    "display_name": "%",
+    "unit_name": "Modifier Percent"
+  },
+  "11": {
+    "description": "Meter per second squared",
+    "display_name": "m/sec",
+    "unit_name": "Acceleration"
+  },
+  "111": {
+    "description": "Used to modify damage resistance. Damage resistance bonus.\n0.1 = 90%\n0.9 = 10%",
+    "display_name": "%",
+    "unit_name": "Inversed Modifier Percent"
+  },
+  "112": {
+    "description": "Rotation speed.",
+    "display_name": "rad/sec",
+    "unit_name": "Radians/Second"
+  },
+  "113": {
+    "display_name": "HP",
+    "unit_name": "Hitpoints"
+  },
+  "114": {
+    "description": "Giga Joule",
+    "display_name": "GJ",
+    "unit_name": "capacitor units"
+  },
+  "115": {
+    "display_name": "groupID",
+    "unit_name": "groupID"
+  },
+  "116": {
+    "display_name": "typeID",
+    "unit_name": "typeID"
+  },
+  "117": {
+    "display_name": "1=small 2=medium 3=l",
+    "unit_name": "Sizeclass"
+  },
+  "118": {
+    "display_name": "Ore units",
+    "unit_name": "Ore units"
+  },
+  "119": {
+    "display_name": "attributeID",
+    "unit_name": "attributeID"
+  },
+  "12": {
+    "description": "Reciprocal meter",
+    "display_name": "m-1",
+    "unit_name": "Wave Number"
+  },
+  "120": {
+    "display_name": "points",
+    "unit_name": "attributePoints"
+  },
+  "121": {
+    "description": "Used for real percentages, i.e. the number 5 is 5%",
+    "display_name": "%",
+    "unit_name": "realPercent"
+  },
+  "122": {
+    "unit_name": "Fitting slots"
+  },
+  "123": {
+    "description": "Shows seconds directly",
+    "display_name": "sec",
+    "unit_name": "trueTime"
+  },
+  "124": {
+    "description": "Used for relative percentages displayed as %",
+    "display_name": "%",
+    "unit_name": "Modifier Relative Percent"
+  },
+  "125": {
+    "display_name": "N",
+    "unit_name": "Newton"
+  },
+  "126": {
+    "display_name": "ly",
+    "unit_name": "Light Year"
+  },
+  "127": {
+    "description": "0.0 = 0% 1.0 = 100%",
+    "display_name": "%",
+    "unit_name": "Absolute Percent"
+  },
+  "128": {
+    "description": "Mega bits per second",
+    "display_name": "Mbit/sec",
+    "unit_name": "Drone bandwidth"
+  },
+  "129": {
+    "description": "Hours",
+    "unit_name": "Hours"
+  },
+  "13": {
+    "description": "Kilogram per cubic meter",
+    "display_name": "kg/m3",
+    "unit_name": "Mass Density"
+  },
+  "133": {
+    "description": "ISK",
+    "display_name": "ISK",
+    "unit_name": "Money"
+  },
+  "134": {
+    "description": "Bandwidth for PI",
+    "display_name": "m3/hour",
+    "unit_name": "Logistical Capacity"
+  },
+  "135": {
+    "description": "Used to denote distance, 1AU = The distance from the Earth to the Sun.",
+    "display_name": "AU",
+    "unit_name": "Astronomical Unit"
+  },
+  "136": {
+    "description": "Slot number prefix for various purposes",
+    "display_name": "Slot",
+    "unit_name": "Slot"
+  },
+  "137": {
+    "description": "For displaying boolean flags",
+    "display_name": "1=True 0=False",
+    "unit_name": "Boolean"
+  },
+  "138": {
+    "description": "Units of something, for example fuel",
+    "display_name": "units",
+    "unit_name": "Units"
+  },
+  "139": {
+    "description": "Forces a plus sign for positive values",
+    "display_name": "+",
+    "unit_name": "Bonus"
+  },
+  "14": {
+    "description": "Cubic meter per kilogram",
+    "display_name": "m3/kg",
+    "unit_name": "Specific Volume"
+  },
+  "140": {
+    "description": "For anything which is divided by levels",
+    "display_name": "Level",
+    "unit_name": "Level"
+  },
+  "141": {
+    "description": "For various counts to do with turret, launcher and rig hardpoints",
+    "display_name": "hardpoints",
+    "unit_name": "Hardpoints"
+  },
+  "142": {
+    "display_name": "1=Male 2=Unisex 3=Female",
+    "unit_name": "Sex"
+  },
+  "143": {
+    "unit_name": "Datetime"
+  },
+  "15": {
+    "description": "Ampere per square meter",
+    "display_name": "A/m2",
+    "unit_name": "Current Density"
+  },
+  "16": {
+    "description": "Ampere per meter",
+    "display_name": "A/m",
+    "unit_name": "Magnetic Field Strength"
+  },
+  "17": {
+    "description": "Mole per cubic meter",
+    "display_name": "mol/m3",
+    "unit_name": "Amount-Of-Substance Concentration"
+  },
+  "18": {
+    "description": "Candela per square meter",
+    "display_name": "cd/m2",
+    "unit_name": "Luminance"
+  },
+  "19": {
+    "description": "Kilogram per kilogram, which may be represented by the number 1",
+    "display_name": "kg/kg = 1",
+    "unit_name": "Mass Fraction"
+  },
+  "2": {
+    "description": "Kilogram",
+    "display_name": "kg",
+    "unit_name": "Mass"
+  },
+  "3": {
+    "description": "Second",
+    "display_name": "sec",
+    "unit_name": "Time"
+  },
+  "4": {
+    "description": "Ampere",
+    "display_name": "A",
+    "unit_name": "Electric Current"
+  },
+  "5": {
+    "description": "Kelvin",
+    "display_name": "K",
+    "unit_name": "Temperature"
+  },
+  "6": {
+    "description": "Mole",
+    "display_name": "mol",
+    "unit_name": "Amount Of Substance"
+  },
+  "7": {
+    "description": "Candela",
+    "display_name": "cd",
+    "unit_name": "Luminous Intensity"
+  },
+  "8": {
+    "description": "Square meter",
+    "display_name": "m2",
+    "unit_name": "Area"
+  },
+  "9": {
+    "description": "Cubic meter",
+    "display_name": "m3",
+    "unit_name": "Volume"
+  }
+}
