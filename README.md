@@ -1,6 +1,9 @@
 # Usage
-`node get.js -o "Item Name"
+`node get.js -o "Item Name"`
 
---
+Case sensitive.  `node get.js -o "atron"` will return an error, while `node get.js -o "Atron"` will return useful output. 
 
-RESTful API, automated build process and better formatting coming soon! 
+
+# To Do:
+
+RESTful API, cleaner data ouput, autobuild/update from APK/AAB, cleaner error handling, and more coming soon! 
