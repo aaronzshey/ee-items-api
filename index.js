@@ -1,34 +1,25 @@
-// get attr
-const fs = require('fs')
-const sqlite3 = require('sqlite3').verbose();
-const attr_db = new sqlite3.Database("./db/attributes.db")
+const express = require('express')
+const app = express()
+const port = 3000
 
 
-//const yargs = require("yargs")
-//  .command("o", "Open a JSON file and analyze its contents")
-
-
-let file = fs.readFileSync("./apk/assets/res/staticdata/dogma/type_attributes_86.json")
-//above would be derived from a database
-
-let mockData = JSON.parse(file)
-
-console.log(mockData["11028000004"])
+const getInfoObj = require("./get.js")
 
 
 
-//this let is important!
-for (let keys in mockData["11028000004"]) {
-//console.log(mockData["11028000004"][keys])
 
 
-  let sql = "SELECT Name FROM Attributes WHERE ID=?;"
+app.get('/', (req, res) => {
+  res.send('Send requests to /api')
+})
 
-  attr_db.all(sql, [keys], (err, data) => {
-    console.log(data[0].Name, "|", mockData["11028000004"][keys])
-  })
+app.get('/api/:name' , (req, res) => {
+  let name = req.params.name
+  getInfoObj(name)
+    .then(x => res.send(x))
+    .catch(e => res.send(e))
+})
 
-}
-
-
-attr_db.close()
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})

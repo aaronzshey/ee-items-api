@@ -4,6 +4,7 @@
   "description": "Hopefully self maintaining build process and API for Eve Echoes.",
   "main": "index.js",
   "dependencies": {
+    "express": "^4.17.1",
     "sequelize": "^6.6.4",
     "sqlite3": "^5.0.2",
     "yargs": "^17.0.1"

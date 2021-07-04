@@ -53,18 +53,32 @@ const getitemID = (zhName) => {
 
 const getdataLoc = (itemID) => {
   return new Promise( (res, rej) => {
-
     loc_db.all("SELECT PATH FROM Locations WHERE ID=?", [itemID], (err, data) => {
           if (err) rej(err)
           return res(data[0].Path)
     })
-
   })
 }
 
-(async () => {
+const getAll = (data, itemID) => {
+    return new Promise((res, rej) => {
+        let placeholders = Object.keys(data[itemID]).map(x => "?").join(",")
 
-  let enID = await getenID(yargs.argv.o)
+        attr_db.all(`SELECT Name FROM Attributes WHERE ID IN (${placeholders})`, Object.keys(data[itemID]), (err, result) => {
+          if (err) rej(err)
+          res(result)
+        })
+    })
+}
+
+
+//EXPORT ASYNC FUNCTION
+
+
+
+async function getInfoObj(name) {
+
+  let enID = await getenID(name)
   let zhName = await getzhName(enID)
   let itemID = await getitemID(zhName)
   let dataLoc = await getdataLoc(itemID)
@@ -72,46 +86,34 @@ const getdataLoc = (itemID) => {
   let f = fs.readFileSync(dataLoc)
   let data = JSON.parse(f)
 
-  for (let keys in data[itemID]) {
-    let sql = "SELECT Name FROM Attributes WHERE ID=?;"
+  let receivedAttr = await getAll(data, itemID)
 
-    attr_db.all(sql, [keys], (err, result) => {
-      console.log(result[0].Name, "|", data[itemID][keys])
-    })
+  let listAttr = receivedAttr.map(x => x.Name)
+  let listKeys = []
+
+  for (keys in data[itemID]) {
+    listKeys.push(data[itemID][keys])
   }
 
 
-})();
+  let resObj = Object.fromEntries(
+    listAttr.map(
+      (_, i) => [listAttr[i], listKeys[i]]
+    )
+  )
 
 
+  return(resObj)
 
-  /*
-  .then(x => {
-    let y = fs.readFileSync((async () => {return await getdataLoc(x)})())
-    for (let keys in y[x]) {
-      let sql = "SELECT Name FROM Attributes WHERE ID=?;"
+};
 
-      attr_db.all(sql, [keys], (err, data) => {
-        console.log(data[0].Name, "|", mockData["11028000004"][keys])
-      })
-    }
-  })
+module.exports = getInfoObj
 
+//getInfoObj(yargs.argv.o)
 //  .then(x => console.log(x))
-  .catch(e => console.log(e))
-
-
 
 /*
 attr_db.close()
 en_db.close()
 zh_db.close()
-
-
-const getdataLoc = (itemID) => {
-  return new Promise( (res, rej) => {
-
-  })
-}
-
 */
