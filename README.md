@@ -8,7 +8,7 @@ Case sensitive.  Sending `atron` will crash the server, but sending `Atron` send
 
 ### You can also use this as a command-line tool.
 - Go to `get.js` and uncomment the last few lines with `yargs` in them.
-- Run `node get.js -o "Item Name`.
+- Run `node get.js -o "Item Name`".
 - Pretty useless huh? 
 
 
